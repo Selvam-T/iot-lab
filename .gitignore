@@ -1,0 +1,35 @@
+# Vagrant runtime
+.vagrant/
+
+# Virtual machine images and artifacts
+*.qcow2
+*.img
+*.box
+*.iso
+*.fd
+
+# Generated rebuild directories
+stage1/rebuild/work/
+stage1/rebuild/output/
+stage1/rebuild/downloads/*
+
+# Preserve checksum lock
+!stage1/rebuild/downloads/base-image.sha256.lock
+
+# Temporary build directories
+box-build/
+box-rebuild/
+nocloud-seed/
+
+# Runtime and diagnostics
+*.log
+*.pid
+*.sock
+*diagnostics*.txt
+
+# Private SSH keys
+id_rsa*
+id_ed25519*
+*.pem
+*.key
+iot-stage1-key*
